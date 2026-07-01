@@ -161,15 +161,18 @@ a {
 }
 
 .champion-banner {
-  padding: clamp(10px, 1.8vw, 22px) clamp(14px, 4vw, 56px);
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
+  padding: clamp(10px, 1.8vw, 22px) 0;
   background: var(--white);
   border-bottom: 1px solid rgba(5, 43, 95, 0.08);
 }
 
 .champion-banner img {
   display: block;
-  width: min(100%, 1360px);
-  max-width: 1360px;
+  width: 100%;
+  max-width: none;
   height: auto;
   margin: 0 auto;
   object-fit: contain;
