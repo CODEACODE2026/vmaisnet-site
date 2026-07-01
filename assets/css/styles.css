@@ -91,18 +91,18 @@ a {
 
 .brand {
   display: inline-grid;
-  width: 86px;
-  height: 86px;
+  width: 68px;
+  height: 68px;
   place-items: center;
-  padding: 8px;
+  padding: 7px;
   background: var(--blue-950);
-  border-radius: 18px;
+  border-radius: 14px;
   box-shadow: 0 12px 28px rgba(5, 43, 95, 0.16);
 }
 
 .brand img {
-  width: 70px;
-  height: 70px;
+  width: 54px;
+  height: 54px;
   object-fit: contain;
 }
 
@@ -622,15 +622,15 @@ h3 {
   }
 
   .brand {
-    width: 72px;
-    height: 72px;
-    padding: 7px;
-    border-radius: 16px;
+    width: 60px;
+    height: 60px;
+    padding: 6px;
+    border-radius: 13px;
   }
 
   .brand img {
-    width: 58px;
-    height: 58px;
+    width: 48px;
+    height: 48px;
   }
 
   .menu-toggle {
