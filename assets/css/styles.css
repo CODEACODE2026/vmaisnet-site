@@ -377,6 +377,7 @@ h3 {
 .plans-toolbar {
   display: inline-grid;
   grid-template-columns: repeat(2, minmax(170px, 1fr));
+  justify-self: center;
   gap: 8px;
   width: min(100%, 520px);
   padding: 8px;
@@ -390,7 +391,7 @@ h3 {
   min-height: 72px;
   padding: 12px 16px;
   color: var(--blue-900);
-  text-align: left;
+  text-align: center;
   background: transparent;
   border: 0;
   border-radius: var(--radius);
