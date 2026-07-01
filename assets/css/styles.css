@@ -154,14 +154,17 @@ a {
 }
 
 .champion-banner {
-  display: flex;
-  justify-content: center;
-  background: var(--orange-600);
+  overflow: hidden;
+  background: #e95500;
 }
 
 .champion-banner img {
-  width: min(100%, 1280px);
-  height: auto;
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: clamp(190px, 24.45vw, 330px);
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero {
