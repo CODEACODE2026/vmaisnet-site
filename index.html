@@ -91,50 +91,149 @@
 
       <section class="section section-light" id="planos">
         <div class="section-heading">
-          <span class="eyebrow">Planos residenciais</span>
-          <h2>Escolha a velocidade ideal para sua rotina.</h2>
-          <p>Cards iniciais para validacao comercial. Velocidades, valores e beneficios finais devem ser confirmados antes da publicacao.</p>
+          <span class="eyebrow">Planos VMaisNet</span>
+          <h2>Planos para casa e empresa, com fibra optica de alto desempenho.</h2>
+          <p>Compare velocidades, veja os principais beneficios e fale com a equipe para confirmar cobertura no seu endereco.</p>
         </div>
 
-        <div class="plans-grid">
-          <article class="plan-card">
-            <img class="plan-icon" src="assets/img/casa-vmaisnet.png" alt="" aria-hidden="true">
-            <span class="plan-label">Essencial</span>
-            <h3>800 Mega</h3>
-            <p>Para navegar, estudar, assistir e manter a casa conectada.</p>
-            <ul>
-              <li>Fibra optica</li>
-              <li>Suporte local</li>
-              <li>Ideal para familias</li>
-            </ul>
-            <a class="btn btn-card" href="https://wa.me/554836264545" target="_blank" rel="noopener">Consultar cobertura</a>
-          </article>
+        <div class="plans-shell">
+          <div class="plans-toolbar" role="tablist" aria-label="Escolha o tipo de plano">
+            <button class="plan-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="plans-home" id="tab-home" data-plan-tab="home">
+              <span>Para voce</span>
+              <strong>Residencial</strong>
+            </button>
+            <button class="plan-tab" type="button" role="tab" aria-selected="false" aria-controls="plans-company" id="tab-company" data-plan-tab="company">
+              <span>Para empresa</span>
+              <strong>Corporativo</strong>
+            </button>
+          </div>
 
-          <article class="plan-card plan-card-featured">
-            <img class="plan-icon" src="assets/img/casa-vmaisnet.png" alt="" aria-hidden="true">
-            <span class="plan-label">Destaque</span>
-            <h3>1GB Champion</h3>
-            <p>Alta velocidade para streaming, jogos, trabalho remoto e varios dispositivos.</p>
-            <ul>
-              <li>Velocidade premium</li>
-              <li>Mais desempenho</li>
-              <li>Atendimento via WhatsApp</li>
-            </ul>
-            <a class="btn btn-primary" href="https://wa.me/554836264545" target="_blank" rel="noopener">Quero esse plano</a>
-          </article>
+          <div class="plan-panel is-active" id="plans-home" role="tabpanel" aria-labelledby="tab-home" data-plan-panel="home">
+            <div class="plans-grid">
+              <article class="plan-card plan-card-featured">
+                <span class="plan-label">Mais completo</span>
+                <h3>1000 Mega</h3>
+                <p class="plan-type">Plano Residencial</p>
+                <div class="plan-price"><span>R$</span>169<sup>90*</sup></div>
+                <ul>
+                  <li>Wi-Fi 6 AX 3000</li>
+                  <li>Upload 500 Mega</li>
+                  <li>Streaming, jogos e home office</li>
+                  <li>Instalacao gratuita</li>
+                </ul>
+                <a class="btn btn-primary" href="https://wa.me/554836264545" target="_blank" rel="noopener">Contratar pelo WhatsApp</a>
+                <small>Contrato 12 meses. Mediante disponibilidade e consulta cadastral.</small>
+              </article>
 
-          <article class="plan-card">
-            <img class="plan-icon" src="assets/img/escritorio-vmaisnet.png" alt="" aria-hidden="true">
-            <span class="plan-label">Personalizado</span>
-            <h3>Sob consulta</h3>
-            <p>Atendimento para quem precisa confirmar cobertura, valores e disponibilidade.</p>
+              <article class="plan-card">
+                <span class="plan-label">Melhor custo-beneficio</span>
+                <h3>700 Mega</h3>
+                <p class="plan-type">Plano Residencial</p>
+                <div class="plan-price"><span>R$</span>139<sup>90*</sup></div>
+                <ul>
+                  <li>Wi-Fi 6 AX 1700</li>
+                  <li>Upload 300 Mega</li>
+                  <li>Fibra optica</li>
+                  <li>Casa conectada</li>
+                </ul>
+                <a class="btn btn-card" href="https://wa.me/554836264545" target="_blank" rel="noopener">Contratar</a>
+                <small>Contrato 12 meses. Mediante disponibilidade e consulta cadastral.</small>
+              </article>
+
+              <article class="plan-card">
+                <span class="plan-label">Essencial</span>
+                <h3>500 Mega</h3>
+                <p class="plan-type">Plano Residencial</p>
+                <div class="plan-price"><span>R$</span>119<sup>90*</sup></div>
+                <ul>
+                  <li>Wi-Fi 5 AC 1200</li>
+                  <li>Upload 200 Mega</li>
+                  <li>Fibra optica</li>
+                  <li>Uso residencial</li>
+                </ul>
+                <a class="btn btn-card" href="https://wa.me/554836264545" target="_blank" rel="noopener">Contratar</a>
+                <small>Contrato 12 meses. Mediante disponibilidade e consulta cadastral.</small>
+              </article>
+            </div>
+          </div>
+
+          <div class="plan-panel" id="plans-company" role="tabpanel" aria-labelledby="tab-company" data-plan-panel="company" hidden>
+            <div class="plans-grid">
+              <article class="plan-card plan-card-featured">
+                <span class="plan-label">Corporativo premium</span>
+                <h3>1000 Mega</h3>
+                <p class="plan-type">Plano Corporativo</p>
+                <div class="plan-price"><span>R$</span>209<sup>90*</sup></div>
+                <ul>
+                  <li>Download 1000 Mbps</li>
+                  <li>Upload 500 Mbps</li>
+                  <li>IP dinamico</li>
+                  <li>Roteador incluso</li>
+                </ul>
+                <a class="btn btn-primary" href="https://wa.me/554836264545" target="_blank" rel="noopener">Solicitar proposta</a>
+                <small>Fidelidade de 12/24 meses. Sem taxa de instalacao.</small>
+              </article>
+
+              <article class="plan-card">
+                <span class="plan-label">Operacao diaria</span>
+                <h3>700 Mega</h3>
+                <p class="plan-type">Plano Corporativo</p>
+                <div class="plan-price"><span>R$</span>159<sup>90*</sup></div>
+                <ul>
+                  <li>Download 700 Mbps</li>
+                  <li>Upload 300 Mbps</li>
+                  <li>Fibra optica</li>
+                  <li>IP dinamico</li>
+                </ul>
+                <a class="btn btn-card" href="https://wa.me/554836264545" target="_blank" rel="noopener">Solicitar proposta</a>
+                <small>Fidelidade de 12/24 meses. Roteador incluso.</small>
+              </article>
+
+              <article class="plan-card">
+                <span class="plan-label">Empresa enxuta</span>
+                <h3>500 Mega</h3>
+                <p class="plan-type">Plano Corporativo</p>
+                <div class="plan-price"><span>R$</span>139<sup>90*</sup></div>
+                <ul>
+                  <li>Download 500 Mbps</li>
+                  <li>Upload 200 Mbps</li>
+                  <li>Fibra optica</li>
+                  <li>Roteador incluso</li>
+                </ul>
+                <a class="btn btn-card" href="https://wa.me/554836264545" target="_blank" rel="noopener">Solicitar proposta</a>
+                <small>Fidelidade de 12/24 meses. Mediante disponibilidade.</small>
+              </article>
+            </div>
+          </div>
+
+          <div class="plan-extras">
+            <article>
+              <span>Adicional</span>
+              <strong>Linhas adicionais</strong>
+              <p>R$65,00 mensal.</p>
+            </article>
+            <article>
+              <span>Mais cobertura</span>
+              <strong>Rede Wi-Fi Mesh</strong>
+              <p>R$25,00 mensal.</p>
+            </article>
+            <article>
+              <span>Contrate agora</span>
+              <strong>IP fixo</strong>
+              <a href="https://wa.me/554836264545" target="_blank" rel="noopener">Consultar pelo WhatsApp</a>
+            </article>
+          </div>
+
+          <div class="coverage-panel" aria-label="Cidades atendidas">
+            <strong>Cidades atendidas</strong>
             <ul>
-              <li>Analise de cobertura</li>
-              <li>Orientacao comercial</li>
-              <li>Contato rapido</li>
+              <li>Tubarao</li>
+              <li>Capivari de Baixo</li>
+              <li>Laguna</li>
+              <li>Sangao</li>
+              <li>Jaguaruna</li>
             </ul>
-            <a class="btn btn-card" href="https://wa.me/554836264545" target="_blank" rel="noopener">Falar com atendente</a>
-          </article>
+          </div>
         </div>
       </section>
 

@@ -5,7 +5,7 @@ Base inicial estatica para o redesign do site institucional da VMaisNet.
 ## Estrutura
 - `index.html`: home inicial com secoes aprovadas no planejamento.
 - `assets/css/styles.css`: estilos responsivos.
-- `assets/js/main.js`: menu mobile e estado do header.
+- `assets/js/main.js`: menu mobile, estado do header e seletor de planos.
 - `assets/img/`: assets locais usados na primeira base.
 
 ## Fontes de planejamento
@@ -29,12 +29,14 @@ Antes de publicar, confirmar permissao/licenca e substituir por assets finais qu
 - WhatsApp: `https://wa.me/554836264545`
 - Speedtest: `https://vmaisnet.speedtestcustom.com/`
 - Central do assinante: `https://srv.vmaisnet.com/`
+- Planos para voce: `https://vmaisnet.com.br/paravoce/`
+- Planos para empresa: `https://vmaisnet.com.br/para-sua-empresa-internet/`
 - Politica de privacidade: `https://vmaisnet.com.br/politica-de-privacidade/`
 - Facebook: `https://www.facebook.com/vmaisnettubarao`
 - Instagram: `https://www.instagram.com/vmaisnet/`
 
 ## Pendencias
-- Confirmar planos, precos, velocidades e cobertura.
+- Confirmar planos, precos, velocidades, cobertura e condicoes comerciais.
 - Confirmar texto institucional final.
 - Confirmar horarios e enderecos finais com o cliente.
 - Validar direcao visual com o usuario antes de avancar para acabamento.
