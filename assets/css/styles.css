@@ -11,6 +11,7 @@
   --white: #ffffff;
   --shadow: 0 18px 60px rgba(5, 43, 95, 0.16);
   --radius: 8px;
+  --site-max: 1680px;
 }
 
 * {
@@ -75,6 +76,9 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -150,6 +154,9 @@ a {
 }
 
 .section {
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
   padding: clamp(64px, 8vw, 108px) clamp(18px, 4vw, 56px);
 }
 
@@ -170,6 +177,9 @@ a {
 
 .hero {
   display: grid;
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
   grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.76fr);
   align-items: center;
   gap: clamp(36px, 6vw, 72px);
@@ -294,6 +304,9 @@ h3 {
 
 .quick-links {
   display: grid;
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--blue-950);
@@ -558,6 +571,9 @@ h3 {
 
 .site-footer {
   display: grid;
+  width: 100%;
+  max-width: var(--site-max);
+  margin-inline: auto;
   grid-template-columns: auto 1fr;
   gap: 30px;
   align-items: center;
