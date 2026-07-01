@@ -1,8 +1,12 @@
 const menuToggle = document.querySelector("[data-menu-toggle]");
 const menu = document.querySelector("[data-menu]");
 const header = document.querySelector("[data-header]");
+const floatingWhatsapp = document.querySelector(".floating-whatsapp");
 const planTabs = document.querySelectorAll("[data-plan-tab]");
 const planPanels = document.querySelectorAll("[data-plan-panel]");
+const revealItems = document.querySelectorAll(
+  ".hero-content, .hero-media, .quick-links a, .section-heading, .plans-toolbar, .plan-card, .plan-extras article, .coverage-panel, .split-section > div, .feature-list article, .support-grid a, .hours-panel article, .values-grid article, .locations-grid article, .final-cta > div"
+);
 
 if (menuToggle && menu) {
   menuToggle.addEventListener("click", () => {
@@ -27,6 +31,15 @@ if (header) {
   window.addEventListener("scroll", setHeaderState, { passive: true });
 }
 
+if (floatingWhatsapp) {
+  const setFloatingWhatsappState = () => {
+    floatingWhatsapp.classList.toggle("is-visible", window.scrollY > 520);
+  };
+
+  setFloatingWhatsappState();
+  window.addEventListener("scroll", setFloatingWhatsappState, { passive: true });
+}
+
 if (planTabs.length && planPanels.length) {
   planTabs.forEach((tab) => {
     tab.addEventListener("click", () => {
@@ -45,4 +58,31 @@ if (planTabs.length && planPanels.length) {
       });
     });
   });
+}
+
+if (revealItems.length) {
+  revealItems.forEach((item) => item.classList.add("reveal"));
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) {
+            return;
+          }
+
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        });
+      },
+      { rootMargin: "0px 0px -12% 0px", threshold: 0.12 }
+    );
+
+    revealItems.forEach((item) => revealObserver.observe(item));
+    window.setTimeout(() => {
+      revealItems.forEach((item) => item.classList.add("is-visible"));
+    }, 900);
+  } else {
+    revealItems.forEach((item) => item.classList.add("is-visible"));
+  }
 }
