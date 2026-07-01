@@ -18,6 +18,7 @@ Base inicial estatica para o redesign do site institucional da VMaisNet.
 
 ## Assets temporarios
 - `logo-vmaisnet.png`: baixado do site atual da VMaisNet.
+- `banner-champion-vmaisnet.jpg`: banner enviado pelo cliente para manter no topo do site.
 - `provedor-vmaisnet.jpeg`: baixado do site atual da VMaisNet.
 - `casa-vmaisnet.png`: baixado do site atual da VMaisNet.
 - `escritorio-vmaisnet.png`: baixado do site atual da VMaisNet.
