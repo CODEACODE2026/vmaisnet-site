@@ -154,17 +154,18 @@ a {
 }
 
 .champion-banner {
-  overflow: hidden;
-  background: #e95500;
+  padding: clamp(10px, 1.8vw, 22px) clamp(14px, 4vw, 56px);
+  background: var(--white);
+  border-bottom: 1px solid rgba(5, 43, 95, 0.08);
 }
 
 .champion-banner img {
   display: block;
-  width: 100%;
-  max-width: none;
-  height: clamp(190px, 24.45vw, 330px);
-  object-fit: cover;
-  object-position: center;
+  width: min(100%, 1280px);
+  max-width: 1280px;
+  height: auto;
+  margin: 0 auto;
+  object-fit: contain;
 }
 
 .hero {
