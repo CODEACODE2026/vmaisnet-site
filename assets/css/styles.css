@@ -155,9 +155,9 @@ a {
 
 .section {
   width: 100%;
-  max-width: var(--site-max);
-  margin-inline: auto;
-  padding: clamp(64px, 8vw, 108px) clamp(18px, 4vw, 56px);
+  padding:
+    clamp(64px, 8vw, 108px)
+    max(clamp(18px, 4vw, 56px), calc((100vw - var(--site-max)) / 2 + 56px));
 }
 
 .champion-banner {
@@ -181,8 +181,6 @@ a {
 .hero {
   display: grid;
   width: 100%;
-  max-width: var(--site-max);
-  margin-inline: auto;
   grid-template-columns: minmax(0, 1.04fr) minmax(320px, 0.76fr);
   align-items: center;
   gap: clamp(36px, 6vw, 72px);
@@ -308,8 +306,7 @@ h3 {
 .quick-links {
   display: grid;
   width: 100%;
-  max-width: var(--site-max);
-  margin-inline: auto;
+  padding-inline: max(0px, calc((100vw - var(--site-max)) / 2));
   grid-template-columns: repeat(3, 1fr);
   gap: 1px;
   background: var(--blue-950);
@@ -575,12 +572,12 @@ h3 {
 .site-footer {
   display: grid;
   width: 100%;
-  max-width: var(--site-max);
-  margin-inline: auto;
   grid-template-columns: auto 1fr;
   gap: 30px;
   align-items: center;
-  padding: 34px clamp(18px, 4vw, 56px);
+  padding:
+    34px
+    max(clamp(18px, 4vw, 56px), calc((100vw - var(--site-max)) / 2 + 56px));
   background: var(--gray-950);
   color: var(--white);
 }
