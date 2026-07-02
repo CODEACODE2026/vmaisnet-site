@@ -4,9 +4,29 @@ Base inicial estatica para o redesign do site institucional da VMaisNet.
 
 ## Estrutura
 - `index.html`: home inicial com secoes aprovadas no planejamento.
+- `assets/config/site.json`: configuracao editavel de imagens, contatos e links.
 - `assets/css/styles.css`: estilos responsivos.
-- `assets/js/main.js`: menu mobile, estado do header e seletor de planos.
+- `assets/js/main.js`: menu mobile, configuracao do site, estado do header e seletor de planos.
 - `assets/img/`: assets locais usados na primeira base.
+
+## Configuracao editavel
+Edite `assets/config/site.json` para alterar dados principais sem mexer no HTML.
+
+Campos disponiveis:
+- `contact.phoneDisplay`: telefone exibido no site.
+- `contact.phoneHref`: link telefonico no formato `tel:+554836264545`.
+- `contact.whatsappUrl`: link usado em todos os botoes de WhatsApp.
+- `contact.email` e `contact.emailHref`: e-mail exibido e link `mailto:`.
+- `links.speedtest`: link do teste de velocidade.
+- `links.portal`: link da central do assinante.
+- `links.privacy`, `links.facebook`, `links.instagram`: links do rodape.
+- `images.logo`: caminho da logo.
+- `images.championBanner`: caminho do banner do topo.
+- `images.hero`: caminho da imagem principal do hero.
+- `imageAlt.*`: textos alternativos das imagens.
+
+Para trocar uma imagem, envie o arquivo novo para `assets/img/` e altere o caminho em `assets/config/site.json`.
+O HTML continua com valores de fallback caso o arquivo de configuracao nao carregue.
 
 ## Fontes de planejamento
 - `/opt/codeacode/ai-office/projects/vmaisnet-site/discovery.md`

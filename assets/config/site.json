@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "phoneDisplay": "(48) 3626-4545",
+    "phoneHref": "tel:+554836264545",
+    "whatsappUrl": "https://wa.me/554836264545",
+    "email": "atendimento@vmaisnet.com",
+    "emailHref": "mailto:atendimento@vmaisnet.com"
+  },
+  "links": {
+    "speedtest": "https://vmaisnet.speedtestcustom.com/",
+    "portal": "https://srv.vmaisnet.com/",
+    "privacy": "https://vmaisnet.com.br/politica-de-privacidade/",
+    "facebook": "https://www.facebook.com/vmaisnettubarao",
+    "instagram": "https://www.instagram.com/vmaisnet/"
+  },
+  "images": {
+    "logo": "assets/img/logo-vmaisnet.png",
+    "championBanner": "assets/img/banner-champion-vmaisnet.jpg",
+    "hero": "assets/img/provedor-vmaisnet.jpeg"
+  },
+  "imageAlt": {
+    "logo": "VMaisNet",
+    "championBanner": "Plano Champion VMaisNet com 1GB de internet ilimitada e Wi-Fi 6.0",
+    "hero": "Estrutura tecnica de provedor de internet"
+  }
+}

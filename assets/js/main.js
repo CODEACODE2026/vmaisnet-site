@@ -8,6 +8,62 @@ const revealItems = document.querySelectorAll(
   ".hero-content, .hero-media, .quick-links a, .section-heading, .plans-toolbar, .plan-card, .plan-extras article, .coverage-panel, .split-section > div, .feature-list article, .support-grid a, .hours-panel article, .values-grid article, .locations-grid article, .final-cta > div"
 );
 
+const getConfigValue = (config, path) =>
+  path.split(".").reduce((value, key) => {
+    if (value && Object.prototype.hasOwnProperty.call(value, key)) {
+      return value[key];
+    }
+
+    return undefined;
+  }, config);
+
+const applySiteConfig = (config) => {
+  document.querySelectorAll("[data-config-text]").forEach((element) => {
+    const value = getConfigValue(config, element.dataset.configText);
+
+    if (typeof value === "string" && value.trim()) {
+      element.textContent = value;
+    }
+  });
+
+  document.querySelectorAll("[data-config-href]").forEach((element) => {
+    const value = getConfigValue(config, element.dataset.configHref);
+
+    if (typeof value === "string" && value.trim()) {
+      element.setAttribute("href", value);
+    }
+  });
+
+  document.querySelectorAll("[data-config-src]").forEach((element) => {
+    const value = getConfigValue(config, element.dataset.configSrc);
+
+    if (typeof value === "string" && value.trim()) {
+      element.setAttribute("src", value);
+    }
+  });
+
+  document.querySelectorAll("[data-config-alt]").forEach((element) => {
+    const value = getConfigValue(config, element.dataset.configAlt);
+
+    if (typeof value === "string" && value.trim()) {
+      element.setAttribute("alt", value);
+    }
+  });
+};
+
+fetch("assets/config/site.json", { cache: "no-store" })
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Config not found");
+    }
+
+    return response.json();
+  })
+  .then(applySiteConfig)
+  .catch(() => {
+    document.documentElement.dataset.configStatus = "fallback";
+  });
+
 if (menuToggle && menu) {
   menuToggle.addEventListener("click", () => {
     const isOpen = menu.classList.toggle("is-open");
